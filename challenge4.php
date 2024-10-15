@@ -1,19 +1,33 @@
 <?php
 
-$movies['movie 1']['actor1']= 'jean';
-$movies['movie 1']['actor2']= 'joe';
-$movies['movie 1']['actor3']= 'jack';
-$movies['movie 2']['actor1']= 'jean';
-$movies['movie 2']['actor2']= 'joe';
-$movies['movie 2']['actor3']= 'jack';
-$movies['movie 2']['actor4']= 'jean';
-$movies['movie 2']['actor5']= 'joe';
-$movies['movie 3']['actor1']= 'jack';
-$movies['movie 3']['actor2']= 'jack';
-$movies['movie 3']['actor3']= 'jack';
-$movies['movie 3']['actor4']= 'jack';
+$movies['Marie Tudor']['actor1']= 'Cedric Hardwicke';
+$movies['Marie Tudor']['actor2']= 'Nova Pilbeam';
+$movies['Marie Tudor']['actor3']= 'John Mills';
+$movies['Les mines du roi Salomon']['actor1']= 'jCedric Hardwicke';
+$movies['Les mines du roi Salomon']['actor2']= 'Paul Robeson';
+$movies['Les mines du roi Salomon']['actor3']= 'Roland Young';
+$movies['Les mines du roi Salomon']['actor4']= 'jean';
+$movies['Les mines du roi Salomon']['actor5']= 'joe';
+$movies['Back Street']['actor1']= 'Charles Boyer';
+$movies['Back Street']['actor2']= 'Margaret Sullavan';
+$movies['Back Street']['actor3']= 'jack';
+$movies['Back Street']['actor4']= 'john';
 
-echo $movies['movie 1']['actor 2'];
+//var_dump($movies);
+
+
+foreach($movies as $keys => $movie){
+    echo 'Dans le film ', $keys, ', les principaux acteurs sont: ';
+    foreach($movie as $keys=>$actor){
+    echo $actor,', ';
+    };   
+    echo '. <br>';
+};
+
+
+
+
+
 
 
 
