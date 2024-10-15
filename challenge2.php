@@ -22,6 +22,14 @@ function dechiffrer($message) {
     
 
 }
+
+echo dechiffrer("0@sn9sirppa@#?ia'jgtvryko1");
+echo ' ';
+echo dechiffrer('q8e?wsellecif@#?sel@#?setuotpazdsy0*b9+mw@x1vj');
+echo ' ';
+echo dechiffrer("aopi?sgnirts@#?sedhtg+p9l!");
+echo '<br>';
+
 $message=("0@sn9sirppa@#?ia'jgtvryko1");
 $resultat=dechiffrer($message);
 echo $resultat,' ';
