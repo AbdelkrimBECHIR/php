@@ -1,5 +1,5 @@
 <?php
-
+var_dump($movies);
 $movies['Marie Tudor']['actor1']= 'Cedric Hardwicke';
 $movies['Marie Tudor']['actor2']= 'Nova Pilbeam';
 $movies['Marie Tudor']['actor3']= 'John Mills';

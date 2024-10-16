@@ -1,6 +1,7 @@
 <?php
 
-
+$PARAMETRE_1='lion';
+$PARAMETRE_2='feu';
 function writeSecretSentence(string $PARAMETRE_1, string $PARAMETRE_2): string
 {
     $resultat = ($PARAMETRE_1 . ' s\'incline face à ' . $PARAMETRE_2);
@@ -9,4 +10,5 @@ function writeSecretSentence(string $PARAMETRE_1, string $PARAMETRE_2): string
 
 
 
-echo writeSecretSentence('chat', 'lune');
+echo writeSecretSentence($PARAMETRE_1,$PARAMETRE_2);
+
