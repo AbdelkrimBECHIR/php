@@ -1,6 +1,4 @@
 <?php
-// test var_dump avec Xdebug
-var_dump($characters);
 
 $characters = [
     "Abdelkrim Bechir" =>[
@@ -26,6 +24,11 @@ $characters = [
 echo $characters["Abdelkrim Bechir"]["city"];
 echo '<br>';
 print $characters["Abdelkrim Bechir"]["weapon"];
+
+// test var_dump avec Xdebug
+echo "<pre>";
+var_dump($characters);
+echo "</pre>";
 
 
 
