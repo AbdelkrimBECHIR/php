@@ -26,9 +26,9 @@ echo '<br>';
 print $characters["Abdelkrim Bechir"]["weapon"];
 
 // test var_dump avec Xdebug
-echo "<pre>";
+
 var_dump($characters);
-echo "</pre>";
+
 
 
 
