@@ -1,4 +1,16 @@
-<form action="thanks.php" target=_blank method="post">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+<form action="thanks9.php" target=_blank method="post">
   <ul>
     <li>
       <label for="name">Prenom&nbsp;:</label>
@@ -20,10 +32,10 @@
     <li>
       <label for="sujet">Sujet :</label>  
       <select id="sujet" name="user_subject">
-        <option value="Manger">Manger</option>
-        <option value="Boire">Boire</option>
-        <option value="Dormir">Dormir</option>
-        <option value="Travailler">Travail</option>
+        <option value="Manger">Manger.</option>
+        <option value="Boire">Boire.</option>
+        <option value="Dormir">Dormir.</option>
+        <option value="Travailler">Travail.</option>
       </select>
 
 
@@ -115,3 +127,7 @@
     margin-left: 0.5em;
   }
 </style>
+
+
+</body>
+</html>
