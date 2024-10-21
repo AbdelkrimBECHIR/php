@@ -4,11 +4,11 @@
 
     if (isset($_POST["user_login"])){
 
-$_SESSION["user_login"]=$_POST["user_login"];
-
-header('location:index.php');
-    exit();
+    $_SESSION["user_login"]=$_POST["user_login"];
+        header('location:index.php');
+        exit();
 }
+    
 ?>
 
 

@@ -1,5 +1,8 @@
 <?php
 session_start();
+print_r($_SESSION["user_login"]);
+
+
 
 
 ?>
@@ -13,54 +16,66 @@ session_start();
 </head>
 
 <body>
+    <header>
+        <h1>
+            <?php
+            if (empty($_SESSION["user_login"])) {
+                echo "vous n'etes pas connecté" ?> <a href="login.php">Connecter vous</a>
+            <?php
+            } else {
+                echo "bienvenue " . htmlentities($_SESSION['user_login']) . " vous etes connecté.";
+            }
+            ?>
+        </h1>
 
-<?php if($_SESSION["user_login"]):?>
+        <?php if ($_SESSION["user_login"]): ?>
+            <nav>
+                <a href="cart.php" target="_blank">Panier</a>
+                <a href="logout.php" target="_blank">Deconnexion</a>
+            </nav>
 
-             <nav>
-                <a href='cart.php' target="_blank">Panier</a>
-                <a href='logout.php' target="_blank">Deconnexion</a>
-             </nav> 
-             
-             <?php endif ?>
-    
-       
-    <h2> 
-        <?php 
-        if(empty($_SESSION["user_login"])){
-            echo "vous n'etes pas connecté"?> <a href="login.php">Connecter vous</a><?php 
-        }else{
-            echo "bienvenue " . htmlentities($_SESSION['user_login']) . " vous etes connecté.";
-    }
-    ?>    
-</h2>
-        
-        
+        <?php endif ?>
+    </header>
+
+
+
+
 
     <h2>bibliotheque</h2>
 
-    <form method="post">
-        <input type="text" name="book" value="livre 1">
-        <button type="submit" name="add_cart">Ajouter livre 1 au panier</button>
+    <form action="add_to_cart" method="post">
+        <input type="text" name="add_book" value="livre 1">
+        <?php if ($_SESSION["user_login"]): ?>
+            <button type="submit">Ajouter livre 1 au panier</button>
+        <?php endif ?>
     </form>
 
     <form method="post">
         <input type="text" name="book" value="livre 2">
-        <button type="submit" name="add_cart">Ajouter livre 1 au panier</button>
+        <?php if ($_SESSION["user_login"]): ?>
+            <button type="submit" name="add_one">Ajouter livre 1 au panier</button>
+        <?php endif ?>
     </form>
 
     <form method="post">
         <input type="text" name="book" value="livre 3">
-        <button type="submit" name="add_cart">Ajouter livre 1 au panier</button>
+        <?php if ($_SESSION["user_login"]): ?>
+            <button type="submit" name="add_one">Ajouter livre 1 au panier</button>
+        <?php endif ?>
     </form>
 
     <form method="post">
         <input type="text" name="book" value="livre 4">
-        <button type="submit" name="add_cart">Ajouter livre 1 au panier</button>
+        <?php if ($_SESSION["user_login"]): ?>
+            <button type="submit" name="add_one">Ajouter livre 1 au panier</button>
+        <?php endif ?>
     </form>
 
     <form method="post">
         <input type="text" name="book" value="livre 5">
-        <button type="submit" name="add_cart">Ajouter livre 1 au panier</button>
+        <?php if ($_SESSION["user_login"]): ?>
+            <button type="submit" name="add_one">Ajouter livre 1 au panier</button>
+        <?php endif ?>
     </form>
 
 
