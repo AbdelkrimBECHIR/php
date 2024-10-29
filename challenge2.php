@@ -1,5 +1,8 @@
 <?php
+        /*fonction pour dechiffre 
 
+
+        */
 function dechiffrer($message) {
         //1
     $longueurChaine=strlen($message);

@@ -1,6 +1,9 @@
 <?php
+/*  ce fichier est un formulaire qui donne accées à un panier si on se log
+*/
 //demarrage session
     session_start();
+    
 
     if (isset($_POST["user_login"])){
 

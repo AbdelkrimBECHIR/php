@@ -3,6 +3,12 @@ session_start();
 
 
 
+if (isset($_POST["add_book"])){
+    $_SESSION["add_book"]=$add_book;
+}
+
+
+
 
 ?>
 
@@ -39,7 +45,7 @@ session_start();
         <?php endif ?>
     </header>
     <h2>Panier</h2>
-
+          <?php  echo "vous avez ". htmlentities($_SESSION["add_book"]) . " dans votre panier" ?>
 </body>
 
 </html>
